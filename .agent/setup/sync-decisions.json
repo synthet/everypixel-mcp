@@ -1,0 +1,29 @@
+{
+  "review_date": "2026-10-11",
+  "judgments_are_advisory": true,
+  "evidence": "Eleven maintained projects have existing strict generators; eight Claude canonical and three Cursor canonical. Portable deployment needs their required mirrors and rule conversions.",
+  "judgment": {
+    "ok": true,
+    "result": {
+      "model": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 511,
+        "output_tokens": 53
+      },
+      "answers": {
+        "sync_strategy": {
+          "type": "choice",
+          "choice": "preserve_native",
+          "confidence": 1,
+          "probabilities": {
+            "preserve_native": 1,
+            "replace_all": 0,
+            "leave_failed": 0,
+            "no_match": 0
+          }
+        }
+      }
+    }
+  },
+  "reviewed_route": "Retain reviewed native project generators and canonical direction; render in isolated staging; exclude Python caches without relaxing content comparisons; backup each stale generated file."
+}

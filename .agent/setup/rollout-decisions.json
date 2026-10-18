@@ -1,0 +1,49 @@
+{
+  "review_date": "2026-10-11",
+  "judgments_are_advisory": true,
+  "ok": true,
+  "result": {
+    "model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 745,
+      "output_tokens": 146
+    },
+    "answers": {
+      "native_variants": {
+        "type": "choice",
+        "choice": "equivalent_native_variants",
+        "confidence": 0.82,
+        "probabilities": {
+          "equivalent_native_variants": 0.88,
+          "conflicting_workflows": 0.11,
+          "no_match": 0.01
+        }
+      },
+      "runtime_scope": {
+        "type": "choice",
+        "choice": "project_specialization",
+        "confidence": 1,
+        "probabilities": {
+          "project_specialization": 1,
+          "generic_duplicate": 0,
+          "no_match": 0
+        }
+      },
+      "hook_scope": {
+        "type": "choice",
+        "choice": "native_only",
+        "confidence": 0.98,
+        "probabilities": {
+          "native_only": 0.99,
+          "cross_harness": 0,
+          "no_match": 0.01
+        }
+      }
+    }
+  },
+  "reviewed_routes": {
+    "native_variants": "Preserve existing native commands, agents and rules; generate missing adapters.",
+    "runtime_scope": "Preserve project shared runtimes; bundle needed runtime beside portable skills.",
+    "hook_scope": "Preserve Claude Warp hooks in their native harness; do not port event callbacks."
+  }
+}

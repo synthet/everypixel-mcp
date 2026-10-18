@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-11",
+  "model": "jev-1.13.0",
+  "judgments_are_advisory": true,
+  "decisions": [
+    {
+      "candidate": "agent-runtime-handoff",
+      "jev_choice": "specialist",
+      "confidence": 0.45,
+      "route": "generalized specialist",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "merge-open-prs",
+      "jev_choice": "specialist",
+      "confidence": 0.27,
+      "route": "merge into git-and-diff-workflows",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "hook-loopback-safety",
+      "jev_choice": "specialist",
+      "confidence": 0.41,
+      "route": "generalized specialist",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "typescript-monorepo-quality",
+      "jev_choice": "specialist",
+      "confidence": 0.81,
+      "route": "generalized specialist",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "electron-dev",
+      "jev_choice": "specialist",
+      "confidence": 0.82,
+      "route": "generalized electron-development",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "codebase-size-audit",
+      "jev_choice": "specialist",
+      "confidence": 0.36,
+      "route": "generalized specialist",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "webui-gradio",
+      "jev_choice": "specialist",
+      "confidence": 0.84,
+      "route": "generalized gradio-development",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "backup-db",
+      "jev_choice": "specialist",
+      "confidence": 0.57,
+      "route": "generalized database-backups",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "mcp-debugging-workflow",
+      "jev_choice": "merge_existing",
+      "confidence": 0.42,
+      "route": "merge into mcp-server-design",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "windows-keep-awake",
+      "jev_choice": "specialist",
+      "confidence": 0.65,
+      "route": "generalized specialist",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "adr",
+      "jev_choice": "specialist",
+      "confidence": 0.27,
+      "route": "core architecture-decisions",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "database-migrations",
+      "jev_choice": "specialist",
+      "confidence": 0.69,
+      "route": "generalized specialist",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "docker-ops",
+      "jev_choice": "specialist",
+      "confidence": 0.77,
+      "route": "generalized container-operations",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "unity-tests",
+      "jev_choice": "specialist",
+      "confidence": 0.59,
+      "route": "generalized unity-testing",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "archive-session-transcripts",
+      "jev_choice": "specialist",
+      "confidence": 0.41,
+      "route": "generalized specialist",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "add-feature-flag",
+      "jev_choice": "specialist",
+      "confidence": 0.45,
+      "route": "generalized feature-flag-lifecycle",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "logging-and-error-reporting",
+      "jev_choice": "specialist",
+      "confidence": 0.44,
+      "route": "generalized specialist",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "sync-upstream-fork",
+      "jev_choice": "merge_existing",
+      "confidence": 0.3,
+      "route": "merge into git-and-diff-workflows",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "gpui-test",
+      "jev_choice": "specialist",
+      "confidence": 0.54,
+      "route": "retain native project specialist",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "judge-panel",
+      "jev_choice": "specialist",
+      "confidence": 0.63,
+      "route": "generalized specialist",
+      "reason": "Reviewed workflow locally; project APIs, paths, unsafe defaults and provider assumptions excluded."
+    },
+    {
+      "candidate": "judge_panel",
+      "jev_choice": "specialist_pack",
+      "confidence": 0.87,
+      "route": "specialist pack; native originals preserved",
+      "reason": "Verified local workflow and compatibility; no automatic provider or hook port."
+    },
+    {
+      "candidate": "pr_ready_hygiene",
+      "jev_choice": "merge_existing",
+      "confidence": 0.96,
+      "route": "merge verification and review guidance",
+      "reason": "Verified local workflow and compatibility; no automatic provider or hook port."
+    },
+    {
+      "candidate": "archive_session_transcripts",
+      "jev_choice": "specialist_pack",
+      "confidence": 0.44,
+      "route": "specialist pack; native originals preserved",
+      "reason": "Verified local workflow and compatibility; no automatic provider or hook port."
+    },
+    {
+      "candidate": "python_dependencies",
+      "jev_choice": "merge_existing",
+      "confidence": 0.74,
+      "route": "merge into task-env-package-tools",
+      "reason": "Verified local workflow and compatibility; no automatic provider or hook port."
+    },
+    {
+      "candidate": "skill_repair",
+      "jev_choice": "preserve_vendor",
+      "confidence": 0.55,
+      "route": "preserve native provider installation",
+      "reason": "Verified local workflow and compatibility; no automatic provider or hook port."
+    },
+    {
+      "candidate": "cursor_bridge",
+      "jev_choice": "merge_existing",
+      "confidence": 0.69,
+      "route": "merge into subagent-review",
+      "reason": "Verified local workflow and compatibility; no automatic provider or hook port."
+    },
+    {
+      "candidate": "warp_notifications",
+      "jev_choice": "specialist_pack",
+      "confidence": 0.54,
+      "route": "preserve native Claude hooks",
+      "reason": "Verified local workflow and compatibility; no automatic provider or hook port."
+    }
+  ],
+  "policy": {
+    "exact_duplicates": "group by SHA-256; retain provenance",
+    "existing_core": "consolidate overlapping reusable guidance",
+    "other_project_assets": "retain native project specialized contracts; adapt their discovery formats",
+    "provider_managed": "catalog and preserve native installs; do not edit caches or assume tools are portable",
+    "ambiguous": "inspect locally; confidence never establishes correctness or permission"
+  }
+}

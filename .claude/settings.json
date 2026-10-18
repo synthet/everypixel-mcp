@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "WebSearch"
+    ],
+    "additionalDirectories": []
+  },
+  "enabledMcpjsonServers": [],
+  "disabledMcpjsonServers": []
+}

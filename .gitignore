@@ -1,0 +1,39 @@
+# Secrets — never commit
+secrets.json
+.env
+.env.*
+!.env.example
+
+# Local machine-specific agent config
+.claude/settings.local.json
+.cursor/mcp.json
+.agent/local/
+.agents/mcp_config.json
+
+# Agent working dirs (gitignored; only curated memory.md is shared)
+.agent/scratch/*
+!.agent/scratch/.gitkeep
+.agent-memory/raw-sessions/*
+!.agent-memory/raw-sessions/.gitkeep
+.agent-memory/dreams/*
+!.agent-memory/dreams/.gitkeep
+
+# External CLI review outputs
+.agent-runs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+
+# Opt-in Graphify local graph (operator-built; not part of scaffold)
+graphify-out/
+
+# OS / editor
+.DS_Store
+Thumbs.db

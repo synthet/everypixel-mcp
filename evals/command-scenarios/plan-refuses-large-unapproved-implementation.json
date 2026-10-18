@@ -1,0 +1,13 @@
+{
+  "id": "plan-refuses-large-unapproved-implementation",
+  "description": "Protect /plan from performing large implementation work without explicit approval.",
+  "target_asset": ".claude/commands/plan.md",
+  "linked_docs": [],
+  "must_contain": [
+    "Prefer **plan mode** or explicit user approval before large edits.",
+    "If the user has not approved implementation, **do not** apply code changes until they confirm."
+  ],
+  "must_not_contain": [
+    "apply code changes immediately"
+  ]
+}

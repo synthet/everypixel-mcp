@@ -1,0 +1,4 @@
+# Dev/CI dependencies for framework scripts and tests.
+# Runtime scripts are stdlib-only except PyYAML (agent-memory pipeline, OKF linting).
+PyYAML>=6.0
+pytest>=8.0

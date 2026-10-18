@@ -1,0 +1,629 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "id": "resume-task",
+      "source": ".claude/skills/resume-task",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "agent-memory",
+      "source": ".claude/skills/agent-memory",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "agent-runtime-handoff",
+      "source": ".claude/skills/agent-runtime-handoff",
+      "pack": "agent-tools",
+      "global": true,
+      "projects": [
+        "agent-sdlc",
+        "subagent-orchestrator",
+        "jev-mcp",
+        "win-gui-mcp"
+      ]
+    },
+    {
+      "id": "agent-setup",
+      "source": ".claude/skills/agent-setup",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "architecture-decisions",
+      "source": ".claude/skills/architecture-decisions",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "archive-session-transcripts",
+      "source": ".claude/skills/archive-session-transcripts",
+      "pack": "knowledge",
+      "global": true,
+      "projects": [
+        "synthet-llm-wiki",
+        "synthet-code-framework"
+      ]
+    },
+    {
+      "id": "autonomous-run-contract",
+      "source": ".claude/skills/autonomous-run-contract",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "backlog-queue",
+      "source": ".claude/skills/backlog-queue",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "cli-tools-overview",
+      "source": ".claude/skills/cli-tools-overview",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "codebase-size-audit",
+      "source": ".claude/skills/codebase-size-audit",
+      "pack": "maintenance",
+      "global": true,
+      "projects": [
+        "image-scoring",
+        "image-scoring-backend",
+        "image-scoring-gallery",
+        "warp",
+        "zed",
+        "kestrel"
+      ]
+    },
+    {
+      "id": "commit-and-push",
+      "source": ".claude/skills/commit-and-push",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "commit-conventions",
+      "source": ".claude/skills/commit-conventions",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "container-operations",
+      "source": ".claude/skills/container-operations",
+      "pack": "containers",
+      "global": true,
+      "projects": [
+        "nwn-modules",
+        "image-scoring",
+        "image-scoring-backend",
+        "birdweather-telegram-bot",
+        "hetzner-mcp",
+        "lightroom-mcp"
+      ]
+    },
+    {
+      "id": "critical-commit-audit",
+      "source": ".claude/skills/critical-commit-audit",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "data-config-tools",
+      "source": ".claude/skills/data-config-tools",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "database-backups",
+      "source": ".claude/skills/database-backups",
+      "pack": "database",
+      "global": true,
+      "projects": [
+        "nwn-modules",
+        "image-scoring",
+        "image-scoring-backend",
+        "image-scoring-gallery",
+        "video-gallery",
+        "synthet-llm-wiki"
+      ]
+    },
+    {
+      "id": "database-migrations",
+      "source": ".claude/skills/database-migrations",
+      "pack": "database",
+      "global": true,
+      "projects": [
+        "nwn-modules",
+        "image-scoring",
+        "image-scoring-backend",
+        "image-scoring-gallery",
+        "video-gallery",
+        "birdweather-telegram-bot",
+        "synthet-llm-wiki"
+      ]
+    },
+    {
+      "id": "electron-development",
+      "source": ".claude/skills/electron-development",
+      "pack": "electron",
+      "global": true,
+      "projects": [
+        "image-scoring",
+        "image-scoring-gallery",
+        "video-gallery"
+      ]
+    },
+    {
+      "id": "eval",
+      "source": ".claude/skills/eval",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "export-chat",
+      "source": ".claude/skills/export-chat",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "feature-flag-lifecycle",
+      "source": ".claude/skills/feature-flag-lifecycle",
+      "pack": "rollout",
+      "global": true,
+      "projects": [
+        "warp",
+        "zed",
+        "kestrel"
+      ]
+    },
+    {
+      "id": "git-and-diff-workflows",
+      "source": ".claude/skills/git-and-diff-workflows",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "gradio-development",
+      "source": ".claude/skills/gradio-development",
+      "pack": "gradio",
+      "global": true,
+      "projects": [
+        "image-scoring-backend",
+        "image-scoring-model"
+      ]
+    },
+    {
+      "id": "graphify-knowledge-graph",
+      "source": ".claude/skills/graphify-knowledge-graph",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "hook-loopback-safety",
+      "source": ".claude/skills/hook-loopback-safety",
+      "pack": "agent-tools",
+      "global": true,
+      "projects": [
+        "cursor-telegram-bot",
+        "mcp-agent-mailbox",
+        "subagent-orchestrator",
+        "jev-mcp",
+        "win-gui-mcp"
+      ]
+    },
+    {
+      "id": "install-checklist",
+      "source": ".claude/skills/install-checklist",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "jev-mcp",
+      "source": ".claude/skills/jev-mcp",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "judge-panel",
+      "source": ".claude/skills/judge-panel",
+      "pack": "vision-evaluation",
+      "global": true,
+      "projects": [
+        "burstpick-re",
+        "sharp-image-scoring",
+        "image-scoring-backend",
+        "image-scoring-model"
+      ]
+    },
+    {
+      "id": "karpathy-guidelines",
+      "source": ".claude/skills/karpathy-guidelines",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "lesson-to-skill",
+      "source": ".claude/skills/lesson-to-skill",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "lint-format-security",
+      "source": ".claude/skills/lint-format-security",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "llm-wiki",
+      "source": ".claude/skills/llm-wiki",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "logging-and-error-reporting",
+      "source": ".claude/skills/logging-and-error-reporting",
+      "pack": "observability",
+      "global": true,
+      "projects": [
+        "warp",
+        "zed",
+        "kestrel",
+        "cursor-telegram-bot",
+        "image-scoring-backend",
+        "win-gui-mcp"
+      ]
+    },
+    {
+      "id": "mcp-code-intelligence",
+      "source": ".claude/skills/mcp-code-intelligence",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "mcp-server-design",
+      "source": ".claude/skills/mcp-server-design",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "release-bump",
+      "source": ".claude/skills/release-bump",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "rust-testing",
+      "source": ".claude/skills/rust-testing",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "safe-command-patterns",
+      "source": ".claude/skills/safe-command-patterns",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "search-and-navigation",
+      "source": ".claude/skills/search-and-navigation",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "search-tool-selection",
+      "source": ".claude/skills/search-tool-selection",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "security-review",
+      "source": ".claude/skills/security-review",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "skill-authoring",
+      "source": ".claude/skills/skill-authoring",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "structural-code-search",
+      "source": ".claude/skills/structural-code-search",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "subagent-review",
+      "source": ".claude/skills/subagent-review",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "systematic-debugging",
+      "source": ".claude/skills/systematic-debugging",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "task-env-package-tools",
+      "source": ".claude/skills/task-env-package-tools",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "test-driven-development",
+      "source": ".claude/skills/test-driven-development",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "threat-modeling-agentic-tools",
+      "source": ".claude/skills/threat-modeling-agentic-tools",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "typescript-monorepo-quality",
+      "source": ".claude/skills/typescript-monorepo-quality",
+      "pack": "typescript",
+      "global": true,
+      "projects": [
+        "cursor-telegram-bot",
+        "image-scoring",
+        "image-scoring-gallery",
+        "image-scoring-ui",
+        "video-gallery",
+        "mcp-kanban",
+        "birdweather-telegram-bot"
+      ]
+    },
+    {
+      "id": "unity-testing",
+      "source": ".claude/skills/unity-testing",
+      "pack": "unity",
+      "global": true,
+      "projects": [
+        "project-twelve"
+      ]
+    },
+    {
+      "id": "validate-implementation",
+      "source": ".claude/skills/validate-implementation",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "verification-before-completion",
+      "source": ".claude/skills/verification-before-completion",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "windows-agent-tooling",
+      "source": ".claude/skills/windows-agent-tooling",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    },
+    {
+      "id": "windows-keep-awake",
+      "source": ".claude/skills/windows-keep-awake",
+      "pack": "windows",
+      "global": true,
+      "projects": [
+        "image-scoring-backend",
+        "image-scoring-model",
+        "project-twelve",
+        "burstpick-re"
+      ]
+    },
+    {
+      "id": "wsl2-agent-tooling",
+      "source": ".claude/skills/wsl2-agent-tooling",
+      "pack": "core",
+      "global": true,
+      "projects": []
+    }
+  ],
+  "reviewed_project_adoptions": [
+    {
+      "project": "video-gallery",
+      "relative": ".claude/skills/image-scoring-mcp/SKILL.md",
+      "sha256": "6754dc54702a1d3a6ab08af0bbad51bbbc0a4dbd9df5bfe36aadf9ab00152459",
+      "reason": "Correct the native skill discovery name to its directory; retain the Driftara Video MCP workflow and title."
+    }
+  ],
+  "reviewed_global_adoptions": [
+    {
+      "relative": ".claude/skills/archive-session-transcripts/SKILL.md",
+      "sha256": "0e1a4252e7bece9b678acae47d73a8aefd8eb29323a4761f09899aad7f263716",
+      "skill": "archive-session-transcripts"
+    },
+    {
+      "relative": ".claude/skills/judge-panel/SKILL.md",
+      "sha256": "9b3b58d83d4cbee8c40e1741e3ce9bd04e21144f2c15230a1a885532a382f202",
+      "skill": "judge-panel"
+    },
+    {
+      "relative": ".agents/skills/archive-session-transcripts/SKILL.md",
+      "sha256": "0e1a4252e7bece9b678acae47d73a8aefd8eb29323a4761f09899aad7f263716",
+      "skill": "archive-session-transcripts"
+    },
+    {
+      "relative": ".codex/skills/archive-session-transcripts/SKILL.md",
+      "sha256": "0e1a4252e7bece9b678acae47d73a8aefd8eb29323a4761f09899aad7f263716",
+      "skill": "archive-session-transcripts"
+    },
+    {
+      "relative": ".codex/skills/jev-mcp/SKILL.md",
+      "sha256": "9ae9f77cc0631d4a498ee2d9f1858cb99b4334e304f6e002685c8b0da2452e0d",
+      "skill": "jev-mcp"
+    },
+    {
+      "relative": ".codex/skills/llm-wiki/SKILL.md",
+      "sha256": "744040588667071c203d2e2dcfabc10c4465da434b0c3fc3bee47b15cce1ea9e",
+      "skill": "llm-wiki"
+    },
+    {
+      "relative": ".cursor/skills/archive-session-transcripts/SKILL.md",
+      "sha256": "0e1a4252e7bece9b678acae47d73a8aefd8eb29323a4761f09899aad7f263716",
+      "skill": "archive-session-transcripts"
+    },
+    {
+      "relative": ".cursor/skills/export-chat/SKILL.md",
+      "sha256": "f58277c38a79787ed9914ee59ef6e591b1fa841709893c947aad57cc2dee8b1b",
+      "skill": "export-chat"
+    },
+    {
+      "relative": ".gemini/skills/jev-mcp/SKILL.md",
+      "sha256": "9ae9f77cc0631d4a498ee2d9f1858cb99b4334e304f6e002685c8b0da2452e0d",
+      "skill": "jev-mcp"
+    },
+    {
+      "relative": ".gemini/skills/llm-wiki/SKILL.md",
+      "sha256": "744040588667071c203d2e2dcfabc10c4465da434b0c3fc3bee47b15cce1ea9e",
+      "skill": "llm-wiki"
+    },
+    {
+      "relative": ".gemini/config/skills/archive-session-transcripts/SKILL.md",
+      "sha256": "0e1a4252e7bece9b678acae47d73a8aefd8eb29323a4761f09899aad7f263716",
+      "skill": "archive-session-transcripts"
+    },
+    {
+      "relative": ".gemini/antigravity-cli/skills/archive-session-transcripts/SKILL.md",
+      "sha256": "0e1a4252e7bece9b678acae47d73a8aefd8eb29323a4761f09899aad7f263716",
+      "skill": "archive-session-transcripts"
+    }
+  ],
+  "reviewed_resource_adoptions": [
+    {
+      "relative": ".claude/skills/archive-session-transcripts/references/wiki-ingestion.md",
+      "sha256": "93ee97b3fa9e6f325256eadfe1ebb69d1d158197b0b287115756f568e5291301",
+      "reason": "Reviewed path generalization and removal of permission bypass; preserve workflow guards"
+    },
+    {
+      "relative": ".claude/skills/judge-panel/scripts/panel.py",
+      "sha256": "824ee4885ca7c1de01d2c040565cdbd462b2186a1c7e19414f15985a37c3c5d5",
+      "reason": "Reviewed path generalization and removal of permission bypass; preserve workflow guards"
+    },
+    {
+      "relative": ".agents/skills/archive-session-transcripts/references/wiki-ingestion.md",
+      "sha256": "93ee97b3fa9e6f325256eadfe1ebb69d1d158197b0b287115756f568e5291301",
+      "reason": "Reviewed path generalization and removal of permission bypass; preserve workflow guards"
+    },
+    {
+      "relative": ".codex/skills/archive-session-transcripts/references/wiki-ingestion.md",
+      "sha256": "93ee97b3fa9e6f325256eadfe1ebb69d1d158197b0b287115756f568e5291301",
+      "reason": "Reviewed path generalization and removal of permission bypass; preserve workflow guards"
+    },
+    {
+      "relative": ".cursor/skills/archive-session-transcripts/references/wiki-ingestion.md",
+      "sha256": "93ee97b3fa9e6f325256eadfe1ebb69d1d158197b0b287115756f568e5291301",
+      "reason": "Reviewed path generalization and removal of permission bypass; preserve workflow guards"
+    },
+    {
+      "relative": ".cursor/agents/pr-ready-hygiene.md",
+      "sha256": "87131cb421e130d75ccce030420d09fbc34759c9ac009773f03f61580d67a0a1",
+      "reason": "Reviewed path generalization and removal of permission bypass; preserve workflow guards"
+    },
+    {
+      "relative": ".gemini/config/skills/archive-session-transcripts/references/wiki-ingestion.md",
+      "sha256": "93ee97b3fa9e6f325256eadfe1ebb69d1d158197b0b287115756f568e5291301",
+      "reason": "Reviewed path generalization and removal of permission bypass; preserve workflow guards"
+    },
+    {
+      "relative": ".gemini/antigravity-cli/skills/archive-session-transcripts/references/wiki-ingestion.md",
+      "sha256": "93ee97b3fa9e6f325256eadfe1ebb69d1d158197b0b287115756f568e5291301",
+      "reason": "Reviewed path generalization and removal of permission bypass; preserve workflow guards"
+    }
+  ],
+  "project_sync_contracts": {
+    "image-scoring": {
+      "sha256": "09dd44d77b6b9c2986dd7f8e0a08a9ad045ed70d00b8ac809f4a2546d24458f8",
+      "canonical": ".claude"
+    },
+    "image-scoring-backend": {
+      "sha256": "2b8fbc16a720f1781198dc001e96f7e3d6ec25ea8452206985a3023e8fcdcceb",
+      "canonical": ".cursor"
+    },
+    "image-scoring-gallery": {
+      "sha256": "b6d607550be13ef799c5c07cbdac60711582888dafddaef8b2c13134d6bb8ec3",
+      "canonical": ".cursor"
+    },
+    "image-scoring-model": {
+      "sha256": "d93a90deda1a459f4bd0344749ee6c4a532146f7f03820c7b29d02093960e24e",
+      "canonical": ".cursor"
+    },
+    "jev-mcp": {
+      "sha256": "09dd44d77b6b9c2986dd7f8e0a08a9ad045ed70d00b8ac809f4a2546d24458f8",
+      "canonical": ".claude"
+    },
+    "oe-studio": {
+      "sha256": "09dd44d77b6b9c2986dd7f8e0a08a9ad045ed70d00b8ac809f4a2546d24458f8",
+      "canonical": ".claude"
+    },
+    "project-twelve": {
+      "sha256": "52d681f65315bce2bc67f41de0ac0994448d6ba0e41044e46a741b25a9be7730",
+      "canonical": ".claude"
+    },
+    "synthet-llm-wiki": {
+      "sha256": "09dd44d77b6b9c2986dd7f8e0a08a9ad045ed70d00b8ac809f4a2546d24458f8",
+      "canonical": ".claude"
+    },
+    "vault": {
+      "sha256": "5d98066cfca52ec4271267e870a678a35259bb353cc704a351120717adb2e45b",
+      "canonical": ".claude"
+    },
+    "warp": {
+      "sha256": "09dd44d77b6b9c2986dd7f8e0a08a9ad045ed70d00b8ac809f4a2546d24458f8",
+      "canonical": ".claude"
+    },
+    "zed": {
+      "sha256": "09dd44d77b6b9c2986dd7f8e0a08a9ad045ed70d00b8ac809f4a2546d24458f8",
+      "canonical": ".claude"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+version: 1
+default_mode: review_only
+tool_classes:
+  file_read:
+    allowed: true
+    requires_approval: false
+  external_export:
+    allowed: true
+    requires_approval: true
+  file_write:
+    allowed: false
+    requires_approval: true
+approval_requirements:
+  external_export:
+    required: true
+    marker: APPROVED_EXTERNAL_EXPORT
+external_review_constraints:
+  review_only: true
+  allow_writes: false
+  require_validator: true
+  validator: scripts/agent_policy/validate_export.py
+denied_globs:
+  - .env
+  - .env.*
+  - '**/.env'
+  - '**/.env.*'
+  - '**/*.pem'
+  - '**/*.key'
+  - '**/*secret*'
+  - '**/*credential*'
+  - '**/credentials.*'
+  - '**/secrets.*'
+  - '**/id_rsa*'
+  - '**/id_ed25519*'
+allowed_globs:
+  - '**/*.md'
+  - '**/*.py'
+  - '**/*.txt'
+  - '**/*.yaml'
+  - '**/*.yml'
+  - '**/*.json'
+  - 'VERSION'
+max_files: 20
+max_total_bytes: 200000

@@ -1,0 +1,16 @@
+{
+  "id": "validate-implementation-marks-unknown-without-evidence",
+  "description": "Protect validate-implementation's evidence requirements and Unknown semantics.",
+  "target_asset": ".claude/skills/validate-implementation/SKILL.md",
+  "linked_docs": [],
+  "must_contain": [
+    "**Evidence or it didn't happen.**",
+    "**Unknown is never an implicit pass.**",
+    "Do not round Unknown up to Verified.",
+    "Only claim the spec is satisfied when **every** AC is Verified."
+  ],
+  "must_not_contain": [
+    "treat Unknown as Verified",
+    "claim satisfied with Unknown"
+  ]
+}

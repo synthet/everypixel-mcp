@@ -1,0 +1,67 @@
+{
+  "_comment": "Project MCP servers for Claude Code. Define local stdio and approved remote HTTP servers here; secrets via env, never inline. Copy .cursor/mcp.example.json -> .cursor/mcp.json (gitignored) for Cursor. Naming convention: <scope>-<ro|rw>-<purpose> (ro/read = read-only, rw/write = write-capable). Prefer a compact search+dispatch surface over many raw tools.",
+  "mcpServers": {
+    "everypixel-rw-labs": {
+      "_comment": "Everypixel Labs AI APIs over stdio. Calls a paid external API — set EVERYPIXEL_CLIENT_ID and EVERYPIXEL_CLIENT_SECRET (or EVERYPIXEL_ACCESS_TOKEN) in the environment.",
+      "side_effects": "write-capable",
+      "approval_required": true,
+      "approval_note": "Required before calling paid generation, transformation, TTS, transcription, chat, or voice mutation endpoints.",
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        ".",
+        "python",
+        "scripts/run_everypixel_mcp.py"
+      ],
+      "env": {
+        "EVERYPIXEL_CLIENT_ID": "${EVERYPIXEL_CLIENT_ID}",
+        "EVERYPIXEL_CLIENT_SECRET": "${EVERYPIXEL_CLIENT_SECRET}",
+        "EVERYPIXEL_ENV_FILE": "D:\\Projects\\everypixel-mcp\\.env"
+      },
+      "type": "stdio"
+    }
+  },
+  "_examples": {
+    "proj-ro-fff": {
+      "_comment": "Optional local stdio read-only file search — https://github.com/dmtrKovalenko/fff . Tools: ffgrep, fffind, fff-multi-grep",
+      "side_effects": "read-only",
+      "command": "fff-mcp",
+      "args": [],
+      "env": {
+        "WORKSPACE_ROOT": "${workspaceFolder}"
+      }
+    },
+    "proj-ro-graphify": {
+      "_comment": "Optional local stdio read-only knowledge graph — https://github.com/Graphify-Labs/graphify . Requires: uv tool install \"graphifyy[mcp]\"; build graphify-out/graph.json first (graphify .). Tools: query_graph, get_node, get_neighbors, shortest_path, …",
+      "side_effects": "read-only",
+      "command": "graphify-mcp",
+      "args": [
+        "graphify-out/graph.json"
+      ],
+      "env": {
+        "WORKSPACE_ROOT": "${workspaceFolder}"
+      }
+    },
+    "proj-ro-docs": {
+      "_comment": "Example remote HTTP read-only MCP server. Remote examples are disabled by default; set enabled=true only after review.",
+      "side_effects": "read-only",
+      "enabled": false,
+      "url": "https://mcp.example.com/docs",
+      "headers": {
+        "Authorization": "Bearer ${MCP_DOCS_TOKEN}"
+      }
+    },
+    "proj-rw-issues": {
+      "_comment": "Example remote HTTP write-capable MCP server. All auth uses env references only; write tools require human approval before side effects.",
+      "side_effects": "write-capable",
+      "approval_required": true,
+      "approval_note": "Required before creating, updating, deleting, or dispatching issue tracker actions.",
+      "enabled": false,
+      "url": "https://mcp.example.com/issues",
+      "headers": {
+        "Authorization": "Bearer ${MCP_ISSUES_TOKEN}"
+      }
+    }
+  }
+}

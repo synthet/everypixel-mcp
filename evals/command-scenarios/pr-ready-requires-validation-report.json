@@ -1,0 +1,14 @@
+{
+  "id": "pr-ready-requires-validation-report",
+  "description": "Protect /pr-ready's requirement to consume validation output before merge-readiness claims.",
+  "target_asset": ".claude/commands/pr-ready.md",
+  "linked_docs": [".agent/workflows/pr-ready.md", ".claude/skills/validate-implementation/SKILL.md"],
+  "must_contain": [
+    "Validation report from `validate-implementation` if a spec with acceptance criteria exists.",
+    "Spec ACs are Verified per `validate-implementation`, or open Unknowns/Failures are listed explicitly.",
+    "Only claim the spec is satisfied when **every** AC is Verified."
+  ],
+  "must_not_contain": [
+    "skip validation report"
+  ]
+}
